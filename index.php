@@ -114,7 +114,8 @@ session_start();
 			border: 1px solid #ff105f;
 			outline: none;
 			color: #ffffff;
-			background: linear-gradient(to left, #ff105f, #ffad06);
+			background: rgb(34,213,120);
+			background: linear-gradient(135deg, rgba(34,213,120,1) 0%, rgba(6,159,79,0.8744747899159664) 100%);
 			box-shadow: 0 0 30px #ff105f, 0 0 60px #ffad06;
 			text-decoration: none;
 		}

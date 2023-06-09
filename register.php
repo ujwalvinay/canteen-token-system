@@ -14,14 +14,14 @@
 		body{
 			margin: 0;
 			padding: 0;
-			background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/pizza.jpg');
+			background:#161616;
 			background-repeat: no-repeat;    
 			background-size: cover;
 			box-sizing: border-box;
 			z-index: -9999;
 			height: 100vh;
 		}
-		}	
+			
 		a{
 			text-decoration: none;
 		}
@@ -34,14 +34,15 @@
 			max-width: 350px;
 			border-radius: 20px;
 			margin: auto;
-			background: rgba(0,0,0,0.8);
-			padding: 20px 40px;
-			color: #fff;
+			background: #fff;
+			padding: 20px;
+			color: black;
 			box-sizing: border-box;
 			z-index: 999;		
 		}
-		h2{
+		.wrap h2{
 			text-align: center;
+			padding-block:1rem;
 		}
 		h6{
 			text-align: center;
@@ -50,15 +51,14 @@
 		input[type=text], input[type=number], input[type=email], input[type=text], textarea, input[type=password]{
 			width: 100%;
 			box-sizing: border-box;
-			padding: 12px 5px;
+			padding: 12px 10px;
 			background: rgba(0,0,0,0.10);
 			outline: none;
 			border: none;
 			border-bottom: 1px solid #fff;
-			color: #fff;
-			border-radius: 5px;
-			margin: 5px;
-			font-weight: bold;
+			color: #000;
+			border-radius: 10px;
+			margin: 10px 5px;
 		}
 		input[type=submit]{
 			width: 100%;
@@ -67,14 +67,13 @@
 			margin-top: 30px;
 			outline: none;
 			border: none;
-			background: linear-gradient(to right, #ff105f, #ffad06);
+			background: rgb(34,213,120);
+			background: linear-gradient(135deg, rgba(34,213,120,1) 0%, rgba(6,159,79,0.8744747899159664) 100%);
 			border-radius: 20px;
 			font-size: 20px;
-			color: #fff;
+			color: #000;
 		}
-		input[type=submit]:hover{
-			background: linear-gradient(to left, #ff105f, #ffad06);
-		}
+		
 		@media screen and (max-width: 579px){
     		.wrap{
     		  top: 10%;
@@ -84,7 +83,7 @@
 </head>
 <body>
 	<div class="wrap">
-		<h2>Register</h2>
+		<h2>Get Started</h2>
 		<form action="register.php" method="post">
 			<input class="" type="text" name="name" value="" placeholder="Name" required>
 
@@ -92,8 +91,6 @@
 
 			<input class="" type="email" name="email" value="" placeholder="Email" required>
 
-			<textarea class="" name="address" placeholder="Address" required></textarea>
-			
 			<input class="" type="password" name="password" value="" placeholder="Password" required>
 
 			<input class="" type="password" name="cpassword" value="" placeholder="Confirm Password" required>

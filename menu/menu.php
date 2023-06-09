@@ -23,7 +23,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Jhatpat Foods</title>
+	<title>Canteen Token System</title>
 	<!-- font awesome -->
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
   	<!-- Bootstrap -->
@@ -68,7 +68,6 @@
 			color: #fff;
 			padding: 5px 10px;
 			border-radius: 5px;
-			border: 1px solid #fff;
 			font-weight: 600;
 			text-decoration: none;
 		}
@@ -94,9 +93,24 @@
 		h5{
 			font-size: 1.5rem!important;
 		}
+		.cart-btn{
+			background: rgb(34,213,120);
+			background: linear-gradient(135deg, rgba(34,213,120,1) 0%, rgba(6,159,79,0.8744747899159664) 100%);
+			
+		}
 		.card{
 			border: none;
 			box-shadow: 0 0 40px #000000;
+		}
+		.container
+		{
+			background-color:#161616;
+		}
+		.container h2
+		{
+			text-align:center;
+			padding-bottom:20px;
+			color:white;
 		}
 		@media screen and (max-width: 3000px) and (min-width: 300px){
     		.card{
@@ -117,17 +131,16 @@
 </head>
 <body>
 	<div class="main-menu sticky-top">
-		<div class="logo">
-			<img src="../images/logo.png" alt="Webiste Logo" class="img-fluid">
-		</div>
+		
 		<div class="inner-menu sticky-top">
-			<a href="../index.php" style="float: left;">HOME</a>
+			<a href="../index.php" style="float: left;"><img src="./assets/Home.svg"/></a>
 			<a href="../login.php" style="float: right;">CART 0
 			</a>	
 		</div>
 	</div>
 	
-	<div class="container" style="padding-top: 70px;">
+	<div class="container" style="padding-top: 40px;">
+		<h2>Menu</h2>
 		<div class="row">
 			<?php 
 			$query = "SELECT * FROM `menu`";
@@ -154,12 +167,12 @@
 											if ($data['type'] == "Veg" || $data['type'] == "veg") 
 											{
 												?>
-													<div><img src="../images/veg.jpg" style="height: 18px;"></div>
+													<div><img src="./assets/veg.jpg" style="height: 18px;"></div>
 												<?php
 											}
 											else
 											{
-												?><div><img src="../images/non-veg.jpg" style="height: 18px;"></div>
+												?><div><img src="./assets/non-veg.jpg" style="height: 18px;"></div>
 												<?php
 											}
 										?></span>
@@ -186,7 +199,7 @@
 								
 								?>
 
-    								<button class="btn btn-primary w-100 mt-4" id="cart" name="add_to_cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> ADD TO CART</button>
+    								<button class="btn cart-btn w-100 mt-4" id="cart" name="add_to_cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
     							</form>
     					</div>
   					</div>

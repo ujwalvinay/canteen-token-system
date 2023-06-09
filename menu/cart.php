@@ -42,7 +42,7 @@
 			margin: 0px;
 			padding: 0px;
 			box-sizing: border-box;
-			/*background: #0000007a;*/
+			background-color:#161616;
 		}
 		img{
   			-webkit-user-drag: none;
@@ -98,15 +98,13 @@
 		}
 		.top-heading h4 {
 		   width: 100%; 
-		   color: #3F51B5;
+		   color: #fff;
 		   font-family: 'Concert One', cursive;
-		   border-bottom: 1px solid #3F51B5; 
 		   line-height: 0.1em;
-		   margin: 10px 0 20px; 
+		   margin: 20px 0 20px; 
 		} 
 
 		.top-heading h4 span { 
-		    background:#fff; 
 		    padding:0 10px; 
 		}
 		.fa{
@@ -124,7 +122,7 @@
 			height: 100px;
 		}
 		.lower-div{
-			background:#e4dede;
+			background:#fff;
 			padding: 13px;
 			font-weight: 600;
 		}
@@ -144,7 +142,9 @@
 		}
 		.checkout{
 			color: #fff;
-			background: linear-gradient(to left, #ff105f, #ffad06);
+			background: rgb(34,213,120);
+			background: linear-gradient(135deg, rgba(34,213,120,1) 0%, rgba(6,159,79,0.8744747899159664) 100%);
+			
 			padding: 15px 40px;
 			font-size: 15px;
 			border-radius: 5px;
@@ -170,7 +170,7 @@
 			position: absolute;
 			top: 63%;
 			left: 50%;
-			color: #000000b8;;
+			color: #fff;;
 			font-weight: 700;
 			transform: translate(-50%, -50%);
 		}
@@ -178,7 +178,7 @@
 			position: absolute;
 			top: 70%;
 			left: 50%;
-			color: #0000008c;
+			color: #fff;
 			font-weight: 500;
 			transform: translate(-50%, -50%);
 		}
@@ -188,19 +188,24 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 			color: #fff;
-			background: #675ef3;
+			background: rgb(34,213,120);
+			background: linear-gradient(135deg, rgba(34,213,120,1) 0%, rgba(6,159,79,0.8744747899159664) 100%);
+			
 			padding: 15px 26px;
 			font-size: 15px;
 			border-radius: 5px;
-			border: 1px solid #fff;
 			font-weight: 600;
 			text-decoration: none;
 		}
 		.empty-cart-div a:hover{
 			color: #fff;
-			background: linear-gradient(to left, #01eab5, #675ef3);
 			font-size: 15px;
 			text-decoration: none;
+		}
+		.main-div
+		{
+			background:#fff;
+			border-radius:15px;
 		}
 		@media (max-width: 992px){
 			.upper-div{
@@ -241,9 +246,7 @@
 </head>
 <body>
 	<div class="main-menu sticky-top">
-		<div class="logo">
-			<img src="../images/logo.png" alt="site logo" class="img-fluid">
-		</div>
+		
 		<div class="inner-menu sticky-top">
 			<a href="index.php" style="float: left;">MENU</a>
 		</div>
@@ -330,12 +333,12 @@
 											if ($data['type'] == "Veg" || $data['type'] == "veg") 
 											{
 												?>
-													<div><img src="../images/veg.jpg" style="height: 18px;"></div>
+													<div><img src="./assets/veg.jpg" style="height: 18px;"></div>
 												<?php
 											}
 											else
 											{
-												?><div><img src="../images/non-veg.jpg" style="height: 18px;"></div>
+												?><div><img src="./assets/non-veg.jpg" style="height: 18px;"></div>
 												<?php
 											}
 										?>
@@ -369,9 +372,7 @@
 						}
 					}
                	?>
-			</div>
-
-			<div class="lower-div">
+				<div class="lower-div">
 				<div class="row px-3">
 
 					<div class="col-lg-9 col-md-9 col-9">
@@ -383,6 +384,9 @@
 					</div>
 				</div>
 			</div>
+			</div>
+
+			
 		</div>
 	</div>
 	
@@ -397,7 +401,7 @@
 
 			<div class="container">
 				<div class="empty-cart-div text-center">
-					<img class="svg-img" src="../images/empty-cart.svg" alt="Empty Cart Svg">
+					<img class="svg-img" src="./assets/empty-cart.svg" alt="Empty Cart Svg">
 					<h2>Empty Cart</h2>
 					<h6 class="text-center">Looks Like you haven't made your choice yet...</h6>
 					<a href="menu.php">Back To Menu</a>

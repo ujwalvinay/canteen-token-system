@@ -58,15 +58,13 @@ body{
 		}
 		.top-heading h4 {
 		   width: 100%; 
-		   color: #3F51B5;
+		   color: #fff;
 		   font-family: 'Concert One', cursive;
-		   border-bottom: 1px solid #3F51B5; 
 		   line-height: 0.1em;
 		   margin: 10px 0 20px; 
 		} 
 
-		.top-heading h4 span { 
-		    background:#fff; 
+		.top-heading h4 span {
 		    padding:0 10px; 
 		}
 		.fa{

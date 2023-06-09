@@ -56,29 +56,47 @@
 			width: 100%;
 			box-sizing: border-box;
 			padding: 12px 5px;
-			background: rgba(0,0,0,0.10);
+			padding-left:20px;
 			outline: none;
 			border: none;
 			border-bottom: 1px solid #fff;
-			color: #fff;
-			border-radius: 5px;
-			margin: 5px;
-			font-weight: bold;
+			color: #000;
+			border-radius: 15px;
+			margin:15px 5px;
 		}
 		input[type=submit]{
 			width: 100%;
 			box-sizing: border-box;
 			padding: 10px 0;
-			margin-top: 30px;
+			margin: 30px 0;
 			outline: none;
 			border: none;
-			background: linear-gradient(to right, #ff105f, #ffad06);
+			background: rgb(34,213,120);
+			background: linear-gradient(135deg, rgba(34,213,120,1) 0%, rgba(6,159,79,0.8744747899159664) 100%);
 			border-radius: 20px;
 			font-size: 20px;
 			color: #fff;
+			font-weight: 600;
 		}
-		input[type=submit]:hover{
-			background: linear-gradient(to left, #ff105f, #ffad06);
+		
+		h6
+		{
+			opacity: .7;
+		}
+		.signup-link
+		{
+			color:#30CA7A;
+			opacity: 1 !important;
+		}
+		.login-title
+		{
+			display:flex;
+			
+			align-items:center;
+		}
+		.login-title h2
+		{
+			text-align:left;
 		}
 	</style>
 </head>
@@ -87,7 +105,10 @@
 		<a href="admin/adminlogin.php"><button class="btn btn-primary">ADMIN</button></a>
 	</div>
 	<div class="wrap">
-		<h2>Login</h2>
+		<div class="login-title">
+			<h2>Welcome<br>Back</h2>
+			<img src="./javascript/images/welcome.svg" class="welcome-image"/>
+		</div>
 		<form action="login.php" method="post">
 			<input class="" type="email" name="uname" placeholder="Email" value="" required>
 			
@@ -95,7 +116,7 @@
 
 			<input type="submit" name="login" value="Login" class="">
 
-			<h6 class="pt-3">Don't have an Acccount? <a href="register.php">Sign Up</a></h6>
+			<h6 class="pt-3 ">Don't have an Acccount? <a href="register.php" class="signup-link">Sign Up</a></h6>
 		</form>
 	</div>
 	
