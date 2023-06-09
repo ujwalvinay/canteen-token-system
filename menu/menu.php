@@ -79,6 +79,11 @@
 		.form-control{
 			padding: 0!important;
 		}
+		.card
+		{
+			background:white;
+			border-radius:15px;
+		}
 		.card-text{
 			font-family: 'Baloo Thambi 2', cursive;
 			font-weight: 400;
@@ -101,6 +106,10 @@
 		.card{
 			border: none;
 			box-shadow: 0 0 40px #000000;
+		}
+		.card-top-img
+		{
+			border-radius:10px 0 10px 0
 		}
 		.container
 		{
