@@ -16,7 +16,6 @@
 			<th width="100">No.</th>
 			<th width="150">Name</th>
 			<th width="150">Mobile</th>
-			<th width="400">Address</th>
 			<th width="180">Email</th>
 			<th width="150">Password</th>
 			<th width="150">Confirm Password</th>
@@ -44,7 +43,6 @@
 						<td> <?php echo $count; ?> </td>
 						<td> <?php echo $data['name']; ?> </td>
 						<td> <?php echo $data['mobile']; ?> </td>
-						<td> <?php echo $data['address']; ?> </td>
 						<td> <?php echo $data['email']; ?> </td>
 						<td> <?php echo $data['password']; ?> </td>
 						<td> <?php echo $data['cpassword']; ?> </td>

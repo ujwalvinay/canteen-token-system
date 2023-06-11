@@ -31,7 +31,6 @@
 			<th width="150">Qty</th>
 			<th width="180">Total</th>
 			<th width="150">Name</th>
-			<th width="400">Address</th>
 			<th width="150">Email</th>
 		</tr>
 
@@ -58,7 +57,6 @@
 						<td> <?php echo "x".$data['qty']; ?> </td>
 						<td> <?php echo $data['total']; ?> </td>
 						<td> <?php echo $data['name']; ?> </td>
-						<td> <?php echo $data['address']; ?> </td>
 						<td> <?php echo $data['email']; ?> </td>
 					</tr>
 					<?php

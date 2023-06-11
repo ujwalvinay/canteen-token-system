@@ -3,32 +3,54 @@
 <head>
 	<title>Add new Item</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+  	
 	<style type="text/css">
+		body
+		{
+			background:#161616;
+		}
 		.abc{
 			border-radius: 50px; 
-			padding-bottom: 50px;
-			margin-left: 50px;
-			margin-right: 50px;
-			background-color: #24262dd9;
+			padding:4rem 8rem;
+			background-color: white;
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			width:max-content;
+			margin:auto;
+		
+		}
+		form
+		{
+			margin:auto;
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			justify-content:center;
+		}
+		input, textarea
+		{
+			margin-left:1rem;
 		}
 	</style>
 
 </head>
 <body>
-	<div align="center" class="bg-dark text-light pt-4 pb-4">
-		<a href="../logout.php"><button style="float: right;" class="btn btn-danger mr-3">LOGOUT</button></a>
-		<a href="admindash.php"><button style="float: left;" class="btn btn-success ml-3"><< BACK</button></a>
+	<div align="center" class=" text-light pt-4 pb-4">
+		<a href="../logout.php"><button style="float: right;" class="btn btn-danger mr-3"><i class="fa fa-sign-out" aria-hidden="true">&nbsp;</i></button></a>
+		<a href="admindash.php"><button style="float: left;" class="btn btn-light ml-3"><<</button></a>
 		<h1>WELCOME TO ADMIN DASHBOARD</h1>	
 	</div>
 
 
-	<div class="text-light abc">
-		<div class="text-center mt-5 pt-5" >
+	<div class="text-dark abc">
+		<div class="text-center mt-1 pt-5" >
 			<h1>ADD NEW ITEM</h1>
 		</div>
 	
-		<table align="center" style="margin-top: 50px; margin-right: 400px;" cellpadding="3">
+		<table  style="margin-top: 50px;" cellpadding="3">
 			<form action="addnewitem.php" method="post" enctype="multipart/form-data">
 				<tr>
 					<td>Item No.</td>
