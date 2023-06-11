@@ -89,7 +89,6 @@
 			color: #fff;
 			padding: 5px 10px;
 			border-radius: 5px;
-			border: 1px solid #fff;
 			font-weight: 600;
 			text-decoration: none;
 		}
@@ -170,53 +169,21 @@
 	</div>
 
 	<div class="main-menu">
-		<div class="logo">
-			<img src="../images/logo.png" alt="site logo" class="img-fluid">
-		</div>
+		
 		<div class="inner-menu">
-			<a href="../index.php" style="float: left;">HOME</a>
+			<a href="../index.php" style="float: left;"><img src="./assets/Home.svg"/></a>
 		</div>
 	</div>
 	
 	<div class="container">
 		<div class="parent-div">
-			<img src="../images/delivery1.gif" class="img-fluid delivery-boy">
-			<h5 class="text-center">Super! Your Order has been confirmed by the restaurant</h5>
+			<img src="./assets/delivery1.gif" class="img-fluid delivery-boy">
+			<h5 class="text-center">Super! Your Order has been confirmed by the canteen</h5>
 		</div>
 	</div>
 	<div class="container">
 		<div class="back-div">
-			<div class="child">
-				<div class="tracking my-3">
-		          	<div class="progress">
-		            	<div class="progress-bar progress-bar-striped progress-bar-animated active bg-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
-          			</div>
-          			<div class="state">
-          				<div class="row pt-2">
-          					<div class="col-lg-3 col-md-3 col-3">
-          						<i class="fa fa-check-circle pl-2" aria-hidden="true"></i>
-          						<h6>SENT </h6>
-          					</div>
-          					<div class="col-lg-3 col-md-3 col-3 text-center">
-          						<i class="fa fa-check-circle" aria-hidden="true"></i>
-          						<h6>CONFIRMED</h6>
-          					</div>
-          					<div class="col-lg-3 col-md-3 col-3 text-center">
-          						<i class="fa fa-check-circle" aria-hidden="true"></i>
-          						<h6>ON THE WAY</h6>
-          					</div>
-							<div class="col-lg-3 col-md-3 col-3 text-right">
-								<i class="fa fa-check-circle pr-4" aria-hidden="true" style="color: #bbb"></i>
-          						<h6 class="text-right">DELIVERED</h6>
-          					</div>		
-          				</div>
-          			</div>
-          			<div class="quote text-center pt-5">
-	        		<h6>Pull up a chair, sit back and relax, as your order is on its way to you!</h6>
-	        		<hr class="w-25">
-	        	</div>
-	        	</div>
-			</div>
+			
 			<div class="order-summary">
 				<div>
 					<div class="border rounded cart-summary bg-white">
@@ -237,10 +204,8 @@
 							<div class="row">
 								<div class="col-lg-6 col-md-6 col-12">
 									<h6><?php echo $name; ?></h6>
-									<h6><?php echo $address; ?></h6>
 								</div>
 								<div class="col-lg-6 col-md-6 col-12">
-									<h6><?php echo $email; ?></h6>
 									<h6><?php echo $mobile ?></h6>
 								</div>
 							</div>

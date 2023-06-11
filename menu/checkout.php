@@ -40,7 +40,7 @@
 			margin: 0px;
 			padding: 0px;
 			box-sizing: border-box;
-			background-image: url('');
+			background:#161616;
 		}
 		.main-menu{
 			width: 100%;
@@ -51,9 +51,7 @@
 			background: #000000b0;
 			color: #fff;
 			height: 80px;
-			background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/navbar-bg.jpg');
-			background-repeat: no-repeat;    
-			background-size: cover;
+			background:#161616;
 			z-index: -9999;
 		}
 		.logo{
@@ -70,7 +68,6 @@
 			color: #fff;
 			padding: 5px 10px;
 			border-radius: 5px;
-			border: 1px solid #fff;
 			font-weight: 600;
 			text-decoration: none;
 		}
@@ -114,11 +111,11 @@
 		}
 		.checkout{
 			color: #fff;
-			background: linear-gradient(to left, #ff105f, #ffad06);
+			background: rgb(34,213,120);
+			background: linear-gradient(135deg, rgba(34,213,120,1) 0%, rgba(6,159,79,0.8744747899159664) 100%);
 			padding: 15px 40px;
 			font-size: 15px;
 			border-radius: 5px;
-			border: 1px solid #ff105f;
 			font-weight: 600;
 			text-decoration: none;
 
@@ -148,11 +145,9 @@
 </head>
 <body>
 	<div class="main-menu sticky-top">
-		<div class="logo">
-			<img src="../images/logo.png" alt="site logo" class="img-fluid">
-		</div>
+		
 		<div class="inner-menu sticky-top">
-			<a href="index.php" style="float: left;">MENU</a>
+			<a href="index.php" style="float: left; width:50px;"><img src="./assets/menu.svg" style="width:100%"/></a>
 			<a href="cart.php" style="float: right;">CART 
 			<?php
 			if (isset($_SESSION['cart'])) 
@@ -187,21 +182,14 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-lg-4 col-md-4 col-3 child-left">
+								<div class="col-lg-4 col-md-5 col-3 child-left">
 									<h6>Mobile No:</h6>
 								</div>
 								<div class="col-lg-8 col-md-8 col-9">
 									<h6><?php echo $data1['mobile'] ?></h6>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-lg-4 col-md-4 col-3 child-left">
-									<h6>Address:</h6>
-								</div>
-								<div class="col-lg-8 col-md-8 col-9">
-									<h6><?php echo $data1['address'] ?></h6>
-								</div>
-							</div>
+							
 							<div class="row">
 								<div class="col-lg-4 col-md-4 col-3 child-left">
 									<h6>Email:</h6>
@@ -209,9 +197,6 @@
 								<div class="col-lg-8 col-md-8 col-9">
 									<h6><?php echo $data1['email'] ?></h6>
 								</div>
-							</div>
-							<div class="text-center py-4">
-								<button class="btn btn-success">Change Address</button>
 							</div>
 						</div>
 					</div>
